@@ -7,6 +7,7 @@ __pycache__/
 
 # Virtual environments
 optopsy-env
+.venv
 
 # C extensions
 *.so
@@ -35,8 +36,28 @@ MANIFEST
 .vscode
 
 /tests/.pytest_cache/
+.coverage
+htmlcov/
 
 *.swp
 *.swo
 
 /venv/
+# Claude Code - ignore local user config but track shared settings and hooks
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
+!.claude/hooks/**
+
+# Environment variables
+.env
+
+# Chainlit
+.chainlit/
+chainlit.md
+
+# Optopsy data uploads
+optopsy_data/
+
+# MkDocs build output
+/site/
